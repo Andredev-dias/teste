@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Controle de estoque</title>
-</head>
-<body>
-    <h1>contato</h1>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Controle de estoque</title>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <a href="../Menu/page.html">VOLTAR</a>
+
+        <h1>Contato</h1>
+
+        <h2>Insira dados iniciais para envio</h2>
+        
+        <label for="nome">Seu nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <br><br>
+
+        <label for="mensagem">Observações:</label>
+        <textarea id="mensagem" placeholder="Digite suas observações"></textarea>
+
+        <br><br>
+
+        <button onclick="conferirMensagemWhatsApp()">Conferir Mensagem</button>
+    
+        <br><br>
+
+        <p>Nome: <span id="confNome"></span></p>
+        <p>Observações: <span id="confMsg"></span></p>
+        <p>Data: <span id="confDate"></span></p>
+
+        <br><br>
+
+        <button onclick="enviar()">Enviar mensagem</button>
+    </body>
+    </html>
