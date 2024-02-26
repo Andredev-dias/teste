@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle de estoque</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <a href="../Menu/page.html">VOLTAR</a>
@@ -19,6 +21,23 @@
     </div>
     <div>
         <button onclick="adicionarItem()">👇 &#8681;</button>
+    </div>
+    <br>
+    <div>
+        <table id="tabela">     
+            <thead>
+                <tr>
+                   <th>Nome</th>
+                   <th>Valor</th>
+                   <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <button onclick="exportarParaExcel()">Gerar Excel</button>
     </div>
 </body>
 </html>
